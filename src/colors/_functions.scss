@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@function shade(
+  $color,
+  $percent
+) {
+  @if not (type-of($color) == color) or ($color == "currentColor") {
+    @error "`#{$color}` is not a valid color for the `$color` argument in " +
+           "the `shade` function.";
+  } @else {
+    @return mix(#000000, $color, $percent);
+  }
+}
+
+@function tint(
+  $color,
+  $percent
+) {
+  @if not (type-of($color) == color) or ($color == "currentColor") {
+    @error "`#{$color}` is not a valid color for the `$color` argument in " +
+           "the `tint` functio.";
+  } @else {
+    @return mix(#FFFFFF, $color, $percent);
+  }
+}

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+// header
+$header-font-family: $body-font-family !default;
+$header-font-style: normal !default;
+$header-font-weight: $global-font-weight-bold !default;
+$header-font-color: inherit !default;
+$header-text-rendering: optimizeLegibility !default;
+$header-classes: false !default;
+
+$header-styles: (
+    'phone': (
+        h1: (
+            font-size: 3.6rem,
+            margin-bottom: 1.2rem,
+            line-height: 1.2
+        ),
+        h2: (
+            font-size: 3.2rem,
+            margin-bottom: 1.2rem,
+            line-height: 1.2
+        ),
+        h3: (
+            font-size: 2.8rem,
+            margin-bottom: 1.2rem,
+            line-height: 1.2
+        ),
+        h4: (
+            font-size: 2.4rem,
+            margin-bottom: .8rem,
+            line-height: 1.2
+        ),
+        h5: (
+            font-size: 2rem,
+            margin-bottom: .8rem,
+            line-height: 1.2
+        ),
+        h6: (
+            font-size: 1.6rem,
+            margin-bottom: .8rem,
+            line-height: 1.2
+        )
+    ),
+    'ipad': (
+        h1: (
+            font-size: 4rem,
+            margin-bottom: 1.6rem
+        ),
+        h2: (
+            font-size: 3.6rem,
+            margin-bottom: 1.6rem
+        ),
+        h3: (
+            font-size: 3.2rem
+        ),
+        h4: (
+            font-size: 2.8rem
+        ),
+        h5: (
+            font-size: 2.4rem
+        ),
+        h6: (
+            font-size: 2rem
+        )
+    )
+) !default;
+
+// small
+$small-font-size: 80% !default;
+
+// paragraphs
+
+$paragraph-text-rendering: optimizeLegibility !default;
+$paragraph-font-color: inherit !default;
+
+$paragraph-styles: (
+    'phone': (
+        font-size: 1.6rem,
+        margin-bottom: 1.2rem,
+        line-height: 1.6
+    ),
+    'ipad': (
+        margin-bottom: 1.6rem
+    )
+) !default;
+
+// lists
+$list-style-type: disc !default;
+$list-nested-side-margin: 2rem !default;
+
+$list-styles: (
+    'phone': (
+        font-size: 1.6rem,
+        margin-bottom: 1.2rem,
+        margin-left: 2rem,
+        line-height: 1.6,
+        list-style-position: outside
+    ),
+    'ipad': (
+        font-size: 2rem
+    )
+) !default;
+
+// links
+$links-color: #00F !default;
+$links-color-hover: #F0F !default;
+$links-text-decoration: none !default;
+$links-text-decoration-hover: underline !default;

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@mixin breakpoint($values...) {
+  @for $i from 1 through length($values) {
+    $value: nth($values, $i);
+    $str: ypa-get-breakpoint($value);
+    $bp: index(map-keys($breakpoints), $value);
+    
+    $old-size: null;
+    
+    // Make breakpoint size available as a variable
+    @if global-variable-exists(_ypa-stored-size) {
+      $old-size: $_ypa-stored-size;
+    }
+    $-jk-size: nth($value, 1) !global; // get the first value to account for `only` and `down` keywords
+    
+    // If $str is still an empty string, no media query is needed
+    @if $str == '' {
+      @content;
+    } @else {
+      @media screen and #{$str} {
+        @content;
+      }
+    }
+    
+    $_ypa-stored-size: $old-size !global;
+  }
+}

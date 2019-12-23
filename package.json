@@ -1,0 +1,24 @@
+{
+  "name" : "@ypa/pickup-truck",
+  "version" : "0.1.0",
+  "description" : "Pick up your Scss project easily with our pickup truck",
+  "main" : "src/_index.scss",
+  "author" : "Jos Koomen <jos@yourpersonal.agency>",
+  "license" : "MIT",
+  "scripts" : {
+    "install" : "yarn install",
+    "test" : "echo \"Error: no test specified\" && exit 1",
+    "dev" : "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git@github.com:yourpersonalagency/pickup-truck.git"
+  },
+  "keywords" : [
+    "boilerplate",
+    "ypa",
+    "scss"
+  ],
+  "homepage" : "https://github.com/yourpersonalagency/pickup-truck",
+  "dependencies" : {}
+}
