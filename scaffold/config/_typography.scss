@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+// header
+$header-font-family: $body-font-family !default;
+$header-font-style: normal !default;
+$heade-font-weight: $global-font-weight-bold !default;
+$header-font-color: inherit !default;
+$header-text-rendering: optimizeLegibility !default;
+$header-classes: false !default;
+
+$header-styles: (
+    'phone': (
+        h1: (
+            font-size: 3.6rem,
+            margin-bottom: 1.2rem,
+            line-height: 1.2
+        ),
+        h2: (
+            font-size: 3.2rem,
+            margin-bottom: 1.2rem,
+            line-height: 1.2
+        ),
+        h3: (
+            font-size: 2.8rem,
+            margin-bottom: 1.2rem,
+            line-height: 1.2
+        ),
+        h4: (
+            font-size: 2.4rem,
+            margin-bottom: .8rem,
+            line-height: 1.2
+        ),
+        h5: (
+            font-size: 2rem,
+            margin-bottom: .8rem,
+            line-height: 1.2
+        ),
+        h6: (
+            font-size: 1.6rem,
+            margin-bottom: .8rem,
+            line-height: 1.2
+        )
+    ),
+    'ipad': (
+        h1: (
+            font-size: 4rem,
+            margin-bottom: 1.6rem,
+            line-height: 1.2
+        ),
+        h2: (
+            font-size: 3.6rem,
+            margin-bottom: 1.6rem,
+            line-height: 1.2
+        ),
+        h3: (
+            font-size: 3.2rem,
+            margin-bottom: 1.2rem,
+            line-height: 1.2
+        ),
+        h4: (
+            font-size: 2.8rem,
+            margin-bottom: .8rem,
+            line-height: 1.2
+        ),
+        h5: (
+            font-size: 2.4rem,
+            margin-bottom: .8rem,
+            line-height: 1.2
+        ),
+        h6: (
+            font-size: 2rem,
+            margin-bottom: .8rem,
+            line-height: 1.2
+        )
+    )
+);
+
+// small
+$small-font-size: 80% !default;
+
+// paragraphs
+$paragraph-lineheight: 1.6 !default;
+$paragraph-margin-bottom: 1rem !default;
+$paragraph-text-rendering: optimizeLegibility !default;
+
+// lists
+$list-lineheight: 1.6 !default;
+$list-margin-bottom: 1rem !default;
+$list-style-type: disc !default;
+$list-style-position: outside !default;
+$list-side-margin: 2rem !default;
+$list-nested-side-margin: 2rem !default;
+$defnlist-margin-bottom: 1rem !default;
+$defnlist-term-weight: $global-font-weight-bold !default;
+$defnlist-term-margin-bottom: 1rem !default;
+
+// links
+$links-color: map_get($colors, 'secondary') !default;
+$links-color-hover: map_get($colors, 'secondary') !default;
+$links-text-decoration: none !default;
+$links-text-decoration-hover: underline !default;

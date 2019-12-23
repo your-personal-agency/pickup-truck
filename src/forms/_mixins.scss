@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}
+
+@mixin clear_appearance($type : 'none') {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  @if $type == 'number' {
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      height: auto;
+    }
+  }
+}
+

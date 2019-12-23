@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@mixin no_bullet() {
+  margin-left: 0;
+  list-style: none;
+}
+
+@mixin ellipsis(
+  $width: 100%,
+  $display: inline-block
+) {
+  display: $display;
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+@mixin multiline-ellipsis($numlines: 2, $line-height: 1) {
+  line-height: $line-height;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $numlines;
+  max-height: $line-height * $numlines;
+}
+
+@mixin h1 {@extend %h1;}
+@mixin h2 {@extend %h2;}
+@mixin h3 {@extend %h3;}
+@mixin h4 {@extend %h4;}
+@mixin h5 {@extend %h5;}
+@mixin h6 {@extend %h6;}

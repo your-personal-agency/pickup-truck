@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+// enter in em values
+$breakpoints: (
+    'phone' : 0em,
+    'tablet': 40em, // 640px
+    'ipad': 64em, // 1024px
+    'desktop': 90em, // 1440px
+);
