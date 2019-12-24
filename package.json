@@ -1,21 +1,21 @@
 {
   "name" : "@ypa/pickup-truck",
-  "version" : "0.3.0",
+  "version" : "0.4.0",
   "description" : "Pick up your Scss project easily with our pickup truck",
   "main" : "src/_index.scss",
-  "author" : "Jos Koomen <jos@yourpersonal.agency>",
+  "author" : "Jos Koomen <jos@yourpersonalagency.nl>",
   "license" : "MIT",
   "scripts" : {
     "test" : "echo \"Error: no test specified\" && exit 1"
   },
   "repository" : {
     "type" : "git",
-    "url" : "git@github.com:yourpersonalagency/pickup-truck.git"
+    "url" : "git@github.com:your-personal-agency/pickup-truck.git"
   },
   "keywords" : [
     "boilerplate",
     "ypa",
     "scss"
   ],
-  "homepage" : "https://github.com/yourpersonalagency/pickup-truck"
+  "homepage" : "https://github.com/your-personal-agency/pickup-truck"
 }
