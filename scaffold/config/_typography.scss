@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 // header
-$header-font-family: $body-font-family !default;
-$header-font-style: normal !default;
-$heade-font-weight: $global-font-weight-bold !default;
-$header-font-color: inherit !default;
-$header-text-rendering: optimizeLegibility !default;
-$header-classes: false !default;
+$header-font-family: $body-font-family;
+$header-font-style: normal;
+$header-font-weight: $global-font-weight-bold;
+$header-font-color: inherit;
+$header-text-rendering: optimizeLegibility;
+$header-classes: false;
 
 $header-styles: (
     'phone': (
@@ -44,58 +44,76 @@ $header-styles: (
     'ipad': (
         h1: (
             font-size: 4rem,
-            margin-bottom: 1.6rem,
-            line-height: 1.2
+            margin-bottom: 1.6rem
         ),
         h2: (
             font-size: 3.6rem,
-            margin-bottom: 1.6rem,
-            line-height: 1.2
+            margin-bottom: 1.6rem
         ),
         h3: (
-            font-size: 3.2rem,
-            margin-bottom: 1.2rem,
-            line-height: 1.2
+            font-size: 3.2rem
         ),
         h4: (
-            font-size: 2.8rem,
-            margin-bottom: .8rem,
-            line-height: 1.2
+            font-size: 2.8rem
         ),
         h5: (
-            font-size: 2.4rem,
-            margin-bottom: .8rem,
-            line-height: 1.2
+            font-size: 2.4rem
         ),
         h6: (
-            font-size: 2rem,
-            margin-bottom: .8rem,
-            line-height: 1.2
+            font-size: 2rem
         )
     )
 );
 
 // small
-$small-font-size: 80% !default;
+$small-font-size: 80%;
 
 // paragraphs
-$paragraph-lineheight: 1.6 !default;
-$paragraph-margin-bottom: 1rem !default;
-$paragraph-text-rendering: optimizeLegibility !default;
+
+$paragraph-text-rendering: optimizeLegibility;
+$paragraph-font-color: inherit;
+
+$paragraph-styles: (
+    'phone': (
+        font-size: 1.6rem,
+        margin-bottom: 1.2rem,
+        line-height: 1.6
+    ),
+    'ipad': (
+        margin-bottom: 1.6rem
+    )
+);
 
 // lists
-$list-lineheight: 1.6 !default;
-$list-margin-bottom: 1rem !default;
-$list-style-type: disc !default;
-$list-style-position: outside !default;
-$list-side-margin: 2rem !default;
-$list-nested-side-margin: 2rem !default;
-$defnlist-margin-bottom: 1rem !default;
-$defnlist-term-weight: $global-font-weight-bold !default;
-$defnlist-term-margin-bottom: 1rem !default;
+$list-style-type: disc;
+$list-nested-side-margin: 2rem;
+
+$list-styles: (
+    'phone': (
+        font-size: 1.6rem,
+        margin-bottom: 1.2rem,
+        margin-left: 2rem,
+        line-height: 1.6,
+        list-style-position: outside
+    ),
+    'ipad': (
+        font-size: 2rem
+    )
+);
 
 // links
-$links-color: map_get($colors, 'secondary') !default;
-$links-color-hover: map_get($colors, 'secondary') !default;
-$links-text-decoration: none !default;
-$links-text-decoration-hover: underline !default;
+
+// blockquotes
+$blockquote-styles: (
+    'phone': (
+        font-size: 1.6rem,
+        margin-bottom: 1.2rem,
+        margin-left: 2rem,
+        line-height: 1.6,
+        font-weight: $global-font-weight-normal
+    ),
+    'ipad': (
+        font-size: 2rem
+    )
+);
+

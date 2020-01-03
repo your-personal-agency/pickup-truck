@@ -106,3 +106,17 @@ $links-color: #00F !default;
 $links-color-hover: #F0F !default;
 $links-text-decoration: none !default;
 $links-text-decoration-hover: underline !default;
+
+// blockquotes
+$blockquote-styles: (
+    'phone': (
+        font-size: 1.6rem,
+        margin-bottom: 1.2rem,
+        margin-left: 2rem,
+        line-height: 1.6,
+        font-weight: $global-font-weight-normal
+    ),
+    'ipad': (
+        font-size: 2rem
+    )
+) !default;
