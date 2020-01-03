@@ -50,6 +50,18 @@
     margin: 0.67em 0;
   }
   
+  @for $i from 1 through 6 {
+    %h#{$i} {
+      font: {
+        family: $header-font-family;
+        style: $header-font-style;
+        weight: $header-font-weight;
+      }
+      color: $header-font-color;
+      text-rendering: $header-text-rendering;
+    }
+  }
+  
   // Heading styles
   @each $header-bp, $header-def in $header-styles {
     @include breakpoint($header-bp) {
@@ -64,16 +76,6 @@
   }
   
   @for $i from 1 through 6 {
-    %h#{$i} {
-      font: {
-        family: $header-font-family;
-        style: $header-font-style;
-        weight: $header-font-weight;
-      }
-      color: $header-font-color;
-      text-rendering: $header-text-rendering;
-    }
-    
     h#{$i} {
       @extend %h#{$i};
     }
@@ -133,9 +135,9 @@
     text-rendering: $paragraph-text-rendering;
   }
   
-  @each $paragraph-bp, $styles in $paragraph-styles {
-    @include breakpoint($paragraph-bp) {
-      p {
+  p {
+    @each $paragraph-bp, $styles in $paragraph-styles {
+      @include breakpoint($paragraph-bp) {
         @extend %p;
         @each $style, $value in $styles {
           #{$style}: #{$value};
@@ -145,12 +147,9 @@
   }
   
   
-  
-  
-  
-  @each $lists-bp, $styles in $list-styles {
-    @include breakpoint($lists-bp) {
-      %ul, ol {
+  %ul, ol {
+    @each $lists-bp, $styles in $list-styles {
+      @include breakpoint($lists-bp) {
         @each $style, $value in $styles {
           #{$style}: #{$value};
         }
@@ -221,6 +220,16 @@
   
   sup {
     top: -0.5em;
+  }
+  
+  blockquote {
+    @each $quote-bp, $styles in $blockquote-styles {
+      @include breakpoint($quote-bp) {
+        @each $style, $value in $styles {
+          #{$style}: #{$value};
+        }
+      }
+    }
   }
   
   // Embedded content
