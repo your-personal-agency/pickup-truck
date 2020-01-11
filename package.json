@@ -1,6 +1,6 @@
 {
   "name" : "@ypa/pickup-truck",
-  "version" : "0.6.1",
+  "version" : "1.0.0-beta",
   "description" : "Pick up your Scss project easily with our pickup truck",
   "main" : "src/_index.scss",
   "author" : "Jos Koomen <jos@yourpersonalagency.nl>",
