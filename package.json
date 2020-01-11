@@ -13,5 +13,7 @@
     "ypa",
     "scss"
   ],
-  "homepage" : "https://github.com/your-personal-agency/pickup-truck"
+  "homepage" : "https://github.com/your-personal-agency/pickup-truck",
+  "dependencies" : {
+    "css-reset-and-normalize" : "^2.1.0"
 }
